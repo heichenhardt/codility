@@ -5,6 +5,11 @@ import org.junit.runner.RunWith;
 import org.junit.runners.JUnit4;
 import uk.co.craftsmanshiplimited.codility.pairsOfIndices.*;
 
+import java.util.ArrayList;
+import java.util.Collection;
+import java.util.Collections;
+import java.util.List;
+
 import static org.junit.Assert.assertEquals;
 
 /**
@@ -53,5 +58,14 @@ public class SolutionTest {
     @Test
     public void testFilterOutCostsForMostCalledNumberDraw() throws Exception {
         assertEquals(900, solution.solution("00:03:00,123-123-123"+Character.toString((char)10)+"00:03:00,123-123-123"+Character.toString((char)10)+"00:06:00,123-123-124"));
+    }
+
+    @Test
+    public void testXXX() throws Exception {
+        final List<String> c1 = new ArrayList<String>();
+        c1.add("foo");
+        final List<String> c2 = Collections.unmodifiableList(c1);
+        c1.add("bar");
+        System.out.println(c2);
     }
 }
